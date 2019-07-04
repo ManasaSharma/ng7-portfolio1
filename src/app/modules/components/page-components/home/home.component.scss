@@ -1,0 +1,25 @@
+@import '../styles/main';
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  //background-image: linear-gradient(to bottom right, #479bef 14%, #7c94ea 43%, #1dbcc5 54%, #6daec3 59%, #4bb8f0 71%, #3a8bc2 84%, #1e2b71 102%);
+  //background-color: black;
+  background-image: $bgColor;
+  text-align: center;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
+
+    .card-container {
+
+    }
+    .detail-container {
+
+    }
+  }
+
+}

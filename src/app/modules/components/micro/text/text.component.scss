@@ -1,0 +1,17 @@
+@import '../../../../../styles/abstracts/variables';
+
+:host {
+
+  &.transform-uppercase {
+    text-transform: uppercase;
+  }
+  &.color-light {
+    color: $white;
+  }
+  &.color-cerulean {
+    color: #2A6BBE;
+  }
+  &.color-gray {
+    color: $gray;
+  }
+}
