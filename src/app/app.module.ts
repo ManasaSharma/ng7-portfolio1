@@ -8,6 +8,8 @@ import { HomeComponent } from './modules/components/page-components/home/home.co
 import { CardComponent } from './modules/components/micro/card/card.component';
 import { DetailsComponent } from './modules/components/micro/details/details.component';
 import { AvatarComponent } from './modules/components/micro/avatar/avatar.component';
+import { MultiCardsComponent } from './modules/components/macro/multi-cards/multi-cards.component';
+import { MyInfoComponent } from './modules/components/macro/my-info/my-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AvatarComponent } from './modules/components/micro/avatar/avatar.compon
     HomeComponent,
     CardComponent,
     DetailsComponent,
-    AvatarComponent
+    AvatarComponent,
+    MultiCardsComponent,
+    MyInfoComponent
   ],
   imports: [
     BrowserModule,

@@ -11,11 +11,10 @@
   .content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     height: inherit;
 
-    .card-container {
-
+    .container {
+      flex: 50%;
     }
     .detail-container {
 

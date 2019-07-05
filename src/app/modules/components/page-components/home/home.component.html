@@ -1,22 +1,14 @@
 <div class="home-container">
   <div class="content">
-    <div class="single-card-container"  (click)="displayCards()">
-      <app-card [title]="'My Portfolio'"></app-card>
-    </div>
-    <!--<ng-container *ngIf="!displayCardsStack">-->
-      <!---->
-    <!--</ng-container>-->
-    <ng-container *ngIf="displayCardsStack">
-        <div class="multiple-card-container" *ngFor="let card of cards">
-          <app-card [title]="card.cardName"></app-card>
-        </div>
-    </ng-container>
 
-    <div class="details-container">
-      <app-avatar></app-avatar>
-      <app-details></app-details>
+    <div class="container card-container">
+        <app-multi-cards></app-multi-cards>
     </div>
+
+
+    <div class="container details-container">
+      <app-my-info></app-my-info>
+    </div>
+
   </div>
-
-
 </div>

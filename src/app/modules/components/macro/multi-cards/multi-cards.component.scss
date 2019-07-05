@@ -1,0 +1,33 @@
+.multi-cards-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  .single-card-container  {
+
+  }
+  .cards-stack-container  {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    width: 333px;
+    border: 1px solid green;
+
+      .each-card {
+        padding: 0.5rem;
+        box-sizing: border-box;
+        animation: cardStackAnimation 3s infinite 0s linear;
+
+      }
+  }
+  .cards-stack-container{
+
+  }
+  @keyframes cardStackAnimation {
+    0% {
+        transform: ease-in-out translatey(0);
+        opacity: 1;
+        }
+}
+
+
+}

@@ -6,23 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public cards = [];
-  public displayCardsStack = false;
-  constructor() {
-    this.cards = this.getCards();
-  }
+
+  constructor() { }
 
   ngOnInit() {
   }
-  getCards() {
-    return [
-      { cardName: 'Skills' },
-      { cardName: 'Experience' },
-      { cardName: 'About Me' }
-    ];
-  }
-  displayCards() {
-    this.displayCardsStack = !this.displayCardsStack;
-  }
-
 }

@@ -1,0 +1,16 @@
+<div class="multi-cards-container">
+  <div class="single-card-container"  (click)="displayCards()">
+    <app-card [title]="'My Portfolio'"></app-card>
+  </div>
+
+  <ng-container *ngIf="displayCardsStack">
+    <div class="cards-stack-container">
+          <div class="each-card" *ngFor="let card of cards">
+              <app-card [title]="card.cardName"></app-card>
+            </div>
+
+    </div>
+
+  </ng-container>
+</div>
+
