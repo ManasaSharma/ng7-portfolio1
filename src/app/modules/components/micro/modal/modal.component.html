@@ -1,0 +1,10 @@
+<div class="modal-card-container">
+  <div class="modal-title-container">
+    <h4 app-text color="light">{{ modalTitle }}</h4>
+    <ng-content></ng-content>
+  </div>
+    <div class="modal-body-container">
+        <img (click)="closeModal('custom-modal')" src="../../../../../assets/images/close-icon.png"/>
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../../../services/modal.service';
 
 @Component({
   selector: 'app-multi-cards',
@@ -9,7 +10,9 @@ export class MultiCardsComponent implements OnInit {
 
   public cards = [];
   public displayCardsStack = false;
-  constructor() {
+  constructor(
+    public modalService: ModalService
+  ) {
     this.cards = this.getCards();
   }
 
@@ -17,7 +20,7 @@ export class MultiCardsComponent implements OnInit {
   }
   getCards() {
     return [
-      { cardName: 'Skills' },
+      { cardName: 'Skills' , image: '../../../../../assets/images/skills.png'},
       { cardName: 'Experience' },
       { cardName: 'About Me' },
       { cardName: 'Contact Me' }
@@ -26,5 +29,12 @@ export class MultiCardsComponent implements OnInit {
   displayCards() {
     this.displayCardsStack = !this.displayCardsStack;
   }
+  openModal(id: string) {
+    this.modalService.open(id);
+}
+
+closeModal(id: string) {
+    this.modalService.close(id);
+}
 
 }

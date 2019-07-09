@@ -29,3 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 references:
 https://medium.com/@aaronverones/using-the-7-1-sass-scss-pattern-with-angular-7-bb210c015dcc
+https://codepen.io/Manoz/full/pydxK
+http://animista.net/play/background/color-change
+https://html-css-js.com/css/generator/box-shadow/
+https://codecraft.tv/courses/angular/quickstart/property-and-event-binding/
+https://stackblitz.com/edit/angular-7-custom-modal-dialog?file=app%2Fhome%2Fhome.component.html
+icons:   https://icons8.com/icons/set/close
+https://www.infragistics.com/community/blogs/b/infragistics/posts/understanding-output-and-eventemitter-in-angular
+
+https://www.infragistics.com/community/blogs/b/infragistics/posts/understanding-output-and-eventemitter-in-angular

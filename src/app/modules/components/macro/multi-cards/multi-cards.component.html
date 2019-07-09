@@ -1,16 +1,18 @@
 <div class="multi-cards-container">
-  <div class="single-card-container"  (click)="displayCards()">
+  <div class="single-card-container" *ngIf="!displayCardsStack" (click)="displayCards()">
     <app-card [title]="'My Portfolio'"></app-card>
   </div>
 
   <ng-container *ngIf="displayCardsStack">
     <div class="cards-stack-container">
-          <div class="each-card" *ngFor="let card of cards">
-              <app-card [title]="card.cardName"></app-card>
-            </div>
+      <div class="each-card" *ngFor="let card of cards">
+        <app-card [style.backgoundImage]="card.image" (click)="openModal('custom-modal')" [title]="card.cardName"></app-card>
+      </div>
 
     </div>
 
   </ng-container>
+  <app-modal id="custom-modal" [title]= "skills" >
+      
+  </app-modal>
 </div>
-

@@ -10,6 +10,7 @@ import { DetailsComponent } from './modules/components/micro/details/details.com
 import { AvatarComponent } from './modules/components/micro/avatar/avatar.component';
 import { MultiCardsComponent } from './modules/components/macro/multi-cards/multi-cards.component';
 import { MyInfoComponent } from './modules/components/macro/my-info/my-info.component';
+import { ModalComponent } from './modules/components/micro/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MyInfoComponent } from './modules/components/macro/my-info/my-info.comp
     DetailsComponent,
     AvatarComponent,
     MultiCardsComponent,
-    MyInfoComponent
+    MyInfoComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
