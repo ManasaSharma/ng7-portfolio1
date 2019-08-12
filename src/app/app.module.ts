@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { MultiCardsComponent } from './modules/components/macro/multi-cards/multi-cards.component';
 import { MyInfoComponent } from './modules/components/macro/my-info/my-info.component';
@@ -31,6 +31,7 @@ import { HomeComponent } from './modules/components/page-components/home/home.co
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule
   ],
