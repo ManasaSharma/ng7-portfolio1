@@ -4,4 +4,12 @@ $gray: #808080;
 $black: #000000;
 $orange: #ffa500;
 
-$bgColor: linear-gradient(to top left, $orange 50%, $gray 50% );
+$topLeftBgColor: linear-gradient(to top left, $orange 50%, $gray 50% );
+$topBgColor: linear-gradient(to top, $gray 50%,  $orange 50%);
+//defined variables for padding, margin, font-size etc
+$Xsmall: 5px;
+$XXsmall: $Xsmall + $Xsmall; //10px;
+$small: $Xsmall + $XXsmall; //15px
+$mid: $XXsmall + $XXsmall; //20px;
+$avg: $small + $mid; //30px;
+$large: $mid + $mid; //40px;

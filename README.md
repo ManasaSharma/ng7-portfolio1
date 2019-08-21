@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-references:
+##references:
 https://medium.com/@aaronverones/using-the-7-1-sass-scss-pattern-with-angular-7-bb210c015dcc
 https://codepen.io/Manoz/full/pydxK
 http://animista.net/play/background/color-change
@@ -38,3 +38,9 @@ icons:   https://icons8.com/icons/set/close
 https://www.infragistics.com/community/blogs/b/infragistics/posts/understanding-output-and-eventemitter-in-angular
 
 https://www.infragistics.com/community/blogs/b/infragistics/posts/understanding-output-and-eventemitter-in-angular
+
+
+##error-1:
+ng serve not found
+solution:  Run `sudo npm link @angular/cli` -------------> https://stackoverflow.com/questions/37227794/ng-command-not-found-while-creating-new-project-using-angular-cli
+

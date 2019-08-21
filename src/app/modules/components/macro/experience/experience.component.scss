@@ -1,0 +1,12 @@
+@import '../../../../../styles/abstracts/mixins';
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    .company {
+        .image-container {
+            img {
+                width: 200px;
+            }
+        }
+    }
+}

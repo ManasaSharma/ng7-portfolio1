@@ -15,7 +15,13 @@ import { DetailsComponent } from './modules/components/micro/details/details.com
 import { ModalComponent } from './modules/components/micro/modal/modal.component';
 import { TextComponent } from './modules/components/micro/text/text.component';
 import { HomeComponent } from './modules/components/page-components/home/home.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogModule } from 'primeng/dialog';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SkillsComponent } from './modules/components/macro/skills/skills.component';
+import { ExperienceComponent } from './modules/components/macro/experience/experience.component';
+import { AboutMeComponent } from './modules/components/macro/about-me/about-me.component';
+import { ContactMeComponent } from './modules/components/macro/contact-me/contact-me.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +32,21 @@ import { HomeComponent } from './modules/components/page-components/home/home.co
     AvatarComponent,
     MultiCardsComponent,
     MyInfoComponent,
-    ModalComponent
+    ModalComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+    DialogModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

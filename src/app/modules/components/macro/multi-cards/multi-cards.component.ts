@@ -10,6 +10,8 @@ export class MultiCardsComponent implements OnInit {
 
   public cards = [];
   public displayCardsStack = false;
+  modalCloseResult: string;
+  title = 'modal-demo';
   constructor(
     public modalService: ModalService
   ) {
@@ -20,21 +22,24 @@ export class MultiCardsComponent implements OnInit {
   }
   getCards() {
     return [
-      { cardName: 'Skills' , image: '../../../../../assets/images/skills.png'},
+      { cardName: 'Skills'},
       { cardName: 'Experience' },
       { cardName: 'About Me' },
       { cardName: 'Contact Me' }
     ];
   }
+  onModalClose(reason: string) {
+    this.modalCloseResult = reason;
+  }
   displayCards() {
     this.displayCardsStack = !this.displayCardsStack;
   }
-  openModal(id: string) {
-    this.modalService.open(id);
-}
+//   openModal(id: string) {
+//     this.modalService.open(id);
+// }
 
-closeModal(id: string) {
-    this.modalService.close(id);
-}
+// closeModal(id: string) {
+//     this.modalService.close(id);
+// }
 
 }
