@@ -23,7 +23,7 @@ export class MultiCardsComponent implements OnInit {
   getCards() {
     return [
       { cardName: 'Skills'},
-      { cardName: 'Experience' },
+      { cardName: 'Companies' },
       { cardName: 'About Me' },
       { cardName: 'Contact Me' }
     ];

@@ -6,30 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  public details = [];
-    public myDetails = [
+  public details: any;
+    public myDetails =
         {
-            imageURL: '../../../../../assets/images/kf.jpeg',
-            year: '(May 2018 - Present)'
-        },
-        {
-            imageURL: '../../../../../assets/images/vm_logo.png',
-            year: '(April 2017-April 2018)'
-        },
-        {
-            imageURL: '../../../../../assets/images/vanguard.png',
-            year: '(March 2016 - March 2017)'
-        },
-        {
-            imageURL: '../../../../../assets/images/jpmc.png',
-            year: '(April 2014 - Dec 2015)'
-        },
-        {
-            imageURL: '../../../../../assets/images/ts.png',
-            year: '(Jan 2012 - March 2013)'
-        }
+            desc: `Hi I am Manasa Budamagunta form Philladelphia,PA, currently working as a UI/UX developer at KornFerry,
+                  creating bug free front end sites. I have over 6+ years of extensive experience as a Creative Developer.`,
+            MsDetails: 'MS Computer Science from Northwestern Polytechnic University 2014',
+            MCADetails: 'MCA from Osmania University, Hyderabad, India- 2011'
 
-    ];
+        };
     getPersonalDetails() {
         console.log(this.myDetails);
         return this.myDetails;

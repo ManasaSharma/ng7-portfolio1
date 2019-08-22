@@ -1,11 +1,116 @@
+@keyframes slit-in-horizontal {
+    0% {
+        transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateZ(0) rotateX(0);
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #19dcea;
+    }
+
+    100% {
+        background: #b22cff;
+    }
+}
+@keyframes fade-in-bck {
+    0% {
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  
+
 .contact-me-container {
     display: flex;
     justify-content: center;
+
     .cm-body-container {
         // todo: add the image as background 
-        background: orange;
-        border-radius: 3%;
-        padding: 24px;
+        animation: color-change-2x 2s linear infinite alternate both;
+        border-radius: 20px;
         width: 50%;
+        -webkit-box-shadow: -1px 3px 36px -2px rgba(48, 48, 48, 0.8);
+        box-shadow: -1px 3px 36px -2px rgba(48, 48, 48, 0.8);
+        animation: slit-in-horizontal 0.45s ease-out both;
+
+        .section-inner-container {
+
+            border: 1px solid #e0eafc;
+            ;
+            margin: 3px;
+            border-radius: 20px;
+            padding: 20px;
+
+            .section-container {
+                padding-bottom: 20px;
+
+                .section {
+                    h2 {
+                        margin-bottom: 0;
+                    }
+
+                    .name {
+                        padding-bottom: 20px;
+                    }
+
+                    .profile-section {
+                        .title-section {
+                            .email {
+                                word-break: break-all;
+                            }
+                            .title-text {
+                                padding-bottom: 5px;
+
+                                i {
+                                    margin-right: 10px;
+                                    
+                                }
+                                span {
+                                    a {
+                                        &:active, &:focus { outline: none; -moz-outline-style: none; }
+                                        
+                                    }
+                                }
+                            }
+
+                            .links {
+                                padding-top: 10px;
+                                a {
+                                    outline: none;
+                                    i {
+                                        font-size: 24px;
+                                        margin-right: 20px;
+
+                                        &:hover {
+                                            animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+        }
     }
 }

@@ -1,12 +1,12 @@
 <div class="experience-container">
-    <div class="company" *ngFor="let experience of experiences">
-        <div class="image-container">
-            <a href="">
+    <div class="company" *ngFor="let experience of experiences" >
+        <div class="image-container" [ngClass]= experience.name>
+            <a target="_blank" [href]=experience.companyURL>
                 <img [src]=experience.imageURL alt="">
             </a>
         </div>
-        <div>
+        <!-- <div>
             <h4 app-text color="light">{{ experience.year }}</h4>
-        </div>
+        </div> -->
     </div>
 </div>

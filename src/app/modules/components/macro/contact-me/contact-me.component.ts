@@ -19,8 +19,6 @@ export class ContactMeComponent implements OnInit {
       name: 'Manasa B',
       phoneNumber: 8653569652,
       title: 'Front-End Developer',
-      linkdin: '',
-      github: '',
       resume: 'Resume',
       email: 'bmanasa.sharma@gmail.com'
 

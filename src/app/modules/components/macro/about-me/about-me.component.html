@@ -1,15 +1,24 @@
 <div class="aboutMe-container">
     <div class="desc" app-text color="light" weight="normal" size=""> 
-        <p  app-text color="light" weight="strong" size="lg"> Description: </p>
-        <p app-text color="light" weight="normal" size="mid">{{ aboutMe.desc }}</p>
+        <h3 app-text color="light" weight="normal">{{ myDetails.desc }}</h3>
     </div>
     <div class="qualification">
-        <div class="qualification-details" *ngFor="">
-            <p  app-text color="light" weight="strong" size="lg"> Qualifications: </p>
-            <h3><span app-text color="light" weight="strong"> {{degree.title}} </span> : 
-                <span app-text color="light" weight="normal"> {{ degree.school }} </span> 
-                <span app-text color="light" weight="heavy"> {{ degree.year }}</span>
-            </h3>
+        <div class="qualification-details">
+            <h4 app-text color="light" weight="strong" > Educational Detials: </h4>
+            <h3  app-text color="light" weight="strong">--- {{myDetails.MsDetails}} </h3>
+            <h3 app-text color="light" weight="strong">--- {{myDetails.MCADetails}} </h3>
+            <div class="title-text">
+                <!-- <a href="../../../../../manasa-resume-2019.docx" download="manasa-resume-2019.docx" app-text color="light" weight="heavy"
+                    size="mid">Resume
+                </a> -->
+                <a target="_blank" href="https://www.linkedin.com/in/manasa-b-0b8a8b106">
+                    <i app-text color="light" size="lg" class="fab fa-linkedin-in"></i>
+                </a>
+                <a target="_blank" href="https://github.com/ManasaSharma/ng7-portfolio1">
+                    <i app-text color="light" size="lg" class="fab fa-github"></i>
+                </a>
+
+            </div>
         </div>
     </div>
 </div>

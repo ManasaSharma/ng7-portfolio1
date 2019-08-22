@@ -11,7 +11,7 @@ export class SkillsComponent implements OnInit {
         type: 'bar'
     },
     title: {
-        text: 'SKILLS'
+        text: 'MY SKILLS'
     },
     xAxis: {
         categories: [

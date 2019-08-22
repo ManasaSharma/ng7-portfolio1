@@ -5,9 +5,13 @@
 .home-container {
     width: 100%;
     height: 100vh;
+    background: #114357;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     //background-image: linear-gradient(to bottom right, #479bef 14%, #7c94ea 43%, #1dbcc5 54%, #6daec3 59%, #4bb8f0 71%, #3a8bc2 84%, #1e2b71 102%);
     //background-color: black;
-    background-image: linear-gradient(to left bottom, #92aae5, #84b4dc, #88bacf, #9abdc2, #afbebc);
+    //background-image: linear-gradient(to left bottom, #92aae5, #84b4dc, #88bacf, #9abdc2, #afbebc);
     // background-image: $topLeftBottomBgColor;
     text-align: center;
 

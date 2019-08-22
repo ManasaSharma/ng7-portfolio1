@@ -6,9 +6,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .company {
+        .kf {
+            padding-top: 30px;
+        }
+        .vanguard {
+            padding-top: 25px;
+        }
+        .jpmc {
+            padding-top: 45px;
+        }
+        .ts {
+            padding-top: 20px;
+        }
         .image-container {
             img {
-                width: 150px;
+                width: 170px;
             }
         }
     }

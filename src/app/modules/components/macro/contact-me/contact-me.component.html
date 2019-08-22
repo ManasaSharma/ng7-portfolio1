@@ -1,26 +1,52 @@
-
 <div class="contact-me-container">
     <div class="cm-body-container">
-        <div class="header">
-            
-        </div>
-        <div class="section-container">
+        <div class="section-inner-container">
+            <div class="section-container">
+
                 <div class="section">
                     <h2 app-text color="light" weight="strong"> {{ contactDetails.title }} </h2>
-                    <h3 app-text color="light" weight="heavy"> {{ contactDetails.name }} </h3>
-                    <h4 app-text color="light" weight="book"> {{ contactDetails.email }} </h4>
-                    <h4 app-text color="light" weight="book"> {{ contactDetails.phone }} </h4>
-                    <h4 app-text color="light" weight="book"> {{ contactDetails.resume }} </h4>
-                </div>
-                <div class="section">
-                    <div class="profile">
-
+                    <hr>
+                    <div class=" name" app-text color="light" weight="strong" size="mid"> {{ contactDetails.name }}
                     </div>
-                    <div class="profile">
-                        
+                    <div class="profile-section">
+                        <div class="title-section">
+                            <div class="title-text email">
+                                <i app-text color="light" class="fas fa-at"></i>
+                                <span app-text color="light" weight="heavy" size="reg">{{ contactDetails.email }}
+                                </span>
+                            </div>
+                            <div class="title-text">
+                                <i app-text color="light" class="fas fa-phone-volume"></i>
+                                <span app-text color="light" weight="heavy" size="reg"> {{ contactDetails.phoneNumber }}
+                                </span> </div>
+                            <!-- <div class="title-text">
+                                <i app-text color="light" class="fas fa-file-download"></i>
+                                <span>
+                                    <a href="../../../../../manasa-resume-2019.docx" download="manasa-resume-2019.docx" app-text color="light" weight="heavy"
+                                        size="reg">{{ contactDetails.resume }}
+                                    </a>
+                                </span>
+                            </div> -->
+                            <div class="links">
+                                    <a target="_blank" href="https://www.linkedin.com/in/manasa-b-0b8a8b106">
+                                        <i app-text color="light" class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a target="_blank" href="https://github.com/ManasaSharma/ng7-portfolio1">
+                                        <i app-text color="light" class="fab fa-github"></i></a>
+    
+                                </div>
                         </div>
+                        <div class="links-section">
+                                
+                            </div>
+                        
+                    </div>
+
+
                 </div>
+
+            </div>
         </div>
-        
+
     </div>
 </div>

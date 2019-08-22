@@ -9,24 +9,29 @@ export class ExperienceComponent implements OnInit {
     public experiences = [];
     public myExperiences = [
         {
-            imageURL: '../../../../../assets/images/kf.jpeg',
-            year: '(May 2018 - Present)'
+            imageURL: '../../../../../assets/images/kf.png',
+            name: 'kf',
+            companyURL: 'https://www.kornferry.com/'
         },
         {
             imageURL: '../../../../../assets/images/vm_logo.png',
-            year: '(April 2017-April 2018)'
+            name: 'vm',
+            companyURL: 'https://www.virginmobileusa.com/'
         },
         {
             imageURL: '../../../../../assets/images/vanguard.png',
-            year: '(March 2016 - March 2017)'
+            name: 'vanguard',
+            companyURL: 'https://investor.vanguard.com/home/?WT.srch=1&cmpgn=PS:RE'
         },
         {
             imageURL: '../../../../../assets/images/jpmc.png',
-            year: '(April 2014 - Dec 2015)'
+            name: 'jpmc',
+            companyURL: 'https://www.jpmorganchase.com/'
         },
         {
             imageURL: '../../../../../assets/images/ts.png',
-            year: '(Jan 2012 - March 2013)'
+            name: 'ts',
+            companyURL: 'http://touchstone-enterprises.com/'
         }
 
     ];
