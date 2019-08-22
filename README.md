@@ -3,13 +3,21 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 # local set up
   `git clone https://github.com/ManasaSharma/ng7-portfolio1.git`
+  
   `cd ng7-portfolio1`
+  
   Node should bbe install from depending on machine ---https://nodejs.org/en/download/
+  
   `npm install`
+  
   `node -v`
+  
   ----should be same version-v12.6.0
+  
   `npm -v`
+  
   -------------6.9.0
+  
   `ng serve`
   
   if obbserved any errors due to sudo --https://stackoverflow.com/questions/48910876/error-eacces-permission-denied-access-usr-local-lib-node-modules-react
