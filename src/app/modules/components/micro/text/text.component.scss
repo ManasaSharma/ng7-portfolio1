@@ -1,6 +1,8 @@
 @import '../../../../../styles/abstracts/variables';
+// @import url('https://fonts.googleapis.com/css?family=Amarante&display=swap');
 
 :host {
+    // font-family: 'Amarante', cursive ;
     &.transform-uppercase {
         text-transform: uppercase;
     }

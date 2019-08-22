@@ -22,7 +22,10 @@
     /* If known, negative margins are probably better (less chance of blurry text). */
     /* margin: -200px 0 0 -200px; */
 
-    background: gray;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     box-shadow: 0 0 314px 75px rgba(0, 0, 0, 0.9);
 
     @include sm {
@@ -62,7 +65,10 @@
         left: 35%;
         width: 150px;
         height: 150px;
-        background-color: orange;
+        background: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         border-radius: 5px;
         -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

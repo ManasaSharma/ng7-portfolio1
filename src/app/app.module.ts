@@ -6,6 +6,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartModule } from 'angular-highcharts';
 
 import { MultiCardsComponent } from './modules/components/macro/multi-cards/multi-cards.component';
 import { MyInfoComponent } from './modules/components/macro/my-info/my-info.component';
@@ -46,7 +47,8 @@ import { ContactMeComponent } from './modules/components/macro/contact-me/contac
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     DialogModule,
-    NgbModule
+    NgbModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

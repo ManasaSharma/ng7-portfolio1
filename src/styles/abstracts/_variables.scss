@@ -4,8 +4,11 @@ $gray: #808080;
 $black: #000000;
 $orange: #ffa500;
 
+
+$topLeftBottomBgColor: linear-gradient(to left bottom, #39c3b1, #63c9d6, #9ccde6, #c7d2e4, #dddddd);
 $topLeftBgColor: linear-gradient(to top left, $orange 50%, $gray 50% );
 $topBgColor: linear-gradient(to top, $gray 50%,  $orange 50%);
+
 
 //defined variables for padding, margin etc
 $Xsmall: 5px;
@@ -29,3 +32,4 @@ $book-font-weight: 300; //book
 $default-font-weight: 400; //normal
 $emphatic-font-weight: 600; //heavy
 $strong-font-weight: 700; //strong
+

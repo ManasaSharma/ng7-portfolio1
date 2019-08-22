@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-public info = [];
+public info: any ;
     public myDetails = 
         {
             name: 'Manasa',

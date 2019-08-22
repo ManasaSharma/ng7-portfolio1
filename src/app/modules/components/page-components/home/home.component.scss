@@ -7,12 +7,13 @@
     height: 100vh;
     //background-image: linear-gradient(to bottom right, #479bef 14%, #7c94ea 43%, #1dbcc5 54%, #6daec3 59%, #4bb8f0 71%, #3a8bc2 84%, #1e2b71 102%);
     //background-color: black;
-    background-image: $topBgColor;
+    background-image: linear-gradient(to left bottom, #92aae5, #84b4dc, #88bacf, #9abdc2, #afbebc);
+    // background-image: $topLeftBottomBgColor;
     text-align: center;
 
-    @include md {
-        background-image: $topLeftBgColor;
-    }
+    // @include md {
+    //     background-image: $topLeftBgColor;
+    // }
 
     .content {
         display: flex;
