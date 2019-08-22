@@ -38,10 +38,9 @@ export class SkillsComponent implements OnInit {
         }
     },
     series: [{
-        data: [
-            8.25, 8, 7, 
-            6, 5.5, 6.5, 
-            7.5, 5,4 ,
+        type: 'bar',
+        data: [8.25, 8, 7,6, 5.5, 6.5, 
+            7.5, 5, 4 ,
             7, 5, 9, 
             9, 9, 3
         ]
