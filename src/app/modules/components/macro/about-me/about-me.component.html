@@ -1,1 +1,15 @@
-<p>about-me works!</p>
+<div class="aboutMe-container">
+    <div class="desc" app-text color="light" weight="normal" size=""> 
+        <p  app-text color="light" weight="strong" size="lg"> Description: </p>
+        <p app-text color="light" weight="normal" size="mid">{{ aboutMe.desc }}</p>
+    </div>
+    <div class="qualification">
+        <div class="qualification-details" *ngFor="">
+            <p  app-text color="light" weight="strong" size="lg"> Qualifications: </p>
+            <h3><span app-text color="light" weight="strong"> {{degree.title}} </span> : 
+                <span app-text color="light" weight="normal"> {{ degree.school }} </span> 
+                <span app-text color="light" weight="heavy"> {{ degree.year }}</span>
+            </h3>
+        </div>
+    </div>
+</div>

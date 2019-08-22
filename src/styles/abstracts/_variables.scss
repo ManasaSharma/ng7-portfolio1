@@ -6,10 +6,26 @@ $orange: #ffa500;
 
 $topLeftBgColor: linear-gradient(to top left, $orange 50%, $gray 50% );
 $topBgColor: linear-gradient(to top, $gray 50%,  $orange 50%);
-//defined variables for padding, margin, font-size etc
+
+//defined variables for padding, margin etc
 $Xsmall: 5px;
 $XXsmall: $Xsmall + $Xsmall; //10px;
 $small: $Xsmall + $XXsmall; //15px
 $mid: $XXsmall + $XXsmall; //20px;
 $avg: $small + $mid; //30px;
 $large: $mid + $mid; //40px;
+
+//defined variabbles for font-sizes
+$xs-fs: 10px; //xs
+$sm-fs: $xs-fs + 2px; //12px; sm
+$nomal-fs: $sm-fs + 4px; //14px; reg
+$mid-fs: $xs-fs + $xs-fs; //20px; mid
+$lg-fs: $mid-fs + 4px; //24px; lg
+$xl-fs: $mid-fs + $xs-fs; //30px; xl
+
+//typography
+$light-font-weight: 200; //light
+$book-font-weight: 300; //book
+$default-font-weight: 400; //normal
+$emphatic-font-weight: 600; //heavy
+$strong-font-weight: 700; //strong

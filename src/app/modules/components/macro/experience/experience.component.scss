@@ -1,11 +1,14 @@
 @import '../../../../../styles/abstracts/mixins';
 .experience-container {
     display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     .company {
         .image-container {
             img {
-                width: 200px;
+                width: 150px;
             }
         }
     }

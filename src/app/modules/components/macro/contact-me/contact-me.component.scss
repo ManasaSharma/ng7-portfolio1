@@ -1,0 +1,11 @@
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+    .cm-body-container {
+        // todo: add the image as background 
+        background: orange;
+        border-radius: 3%;
+        padding: 24px;
+        width: 50%;
+    }
+}

@@ -1,22 +1,25 @@
 
 <ng-template #content let-modal>
-        <div class="modal-card-container">
-                <div class="modal-container">
-                    <div class="modal-header-container">
-                        <div class=" modal-title-container">
-                            <h3 *ngIf="ModalTitle === 'Skills'" app-text color="light">{{ ModalTitle }}</h3>
-                            <h3 *ngIf="ModalTitle === 'Experience'" app-text color="light">{{ ModalTitle }}</h3>
-                            <h3 *ngIf="ModalTitle === 'About Me'" app-text color="light">{{ ModalTitle }}</h3>
-                            <h3 *ngIf="ModalTitle === 'Contact Me'" app-text color="light">{{ ModalTitle }}</h3>
-                        </div>
-                    </div>
-                    <div class="modal-close">
-                        <i app-text color="light" (click)="modal.dismiss(ModalTitle)" class="fas fa-times-circle"></i>
-                    </div>
-                </div>
-            
-                <div class="modal-body-container">
-                        <app-experience *ngIf="ModalTitle === 'Experience'"></app-experience>
+    <div class="modal-card-container">
+        <div class="modal-container">
+            <div class="modal-header-container">
+                <div class=" modal-title-container">
+                    <h3 *ngIf="ModalTitle === 'Skills'" app-text color="light">{{ ModalTitle }}</h3>
+                    <h3 *ngIf="ModalTitle === 'Experience'" app-text color="light">{{ ModalTitle }}</h3>
+                    <h3 *ngIf="ModalTitle === 'About Me'" app-text color="light">{{ ModalTitle }}</h3>
+                    <h3 *ngIf="ModalTitle === 'Contact Me'" app-text color="light">{{ ModalTitle }}</h3>
                 </div>
             </div>
-      </ng-template>
+            <div class="modal-close">
+                <i app-text color="light" (click)="modal.dismiss(ModalTitle)" class="fas fa-times-circle"></i>
+            </div>
+        </div>
+    
+        <div class="modal-body-container">
+                <app-experience *ngIf="ModalTitle === 'Experience'"></app-experience>
+                <app-contact-me *ngIf="ModalTitle === 'Contact Me'"></app-contact-me>
+                <app-about-me *ngIf="ModalTitle === 'About Me'"></app-about-me>
+                <app-skills *ngIf="ModalTitle === 'Skills'"></app-skills>
+        </div>
+    </div>
+</ng-template>

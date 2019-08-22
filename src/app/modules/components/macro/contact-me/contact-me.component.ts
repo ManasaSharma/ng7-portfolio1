@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
-
-  constructor() { }
+  public cards: any;
+  public contactDetails;
+  constructor() { 
+    this.contactDetails = this.getContactInfo();
+  }
 
   ngOnInit() {
+  }
+  getContactInfo() {
+    return {
+      name: 'Manasa B',
+      phoneNumber: 8653569652,
+      title: 'Front-End Developer',
+      linkdin: '',
+      github: '',
+      resume: 'Resume',
+      email: 'bmanasa.sharma@gmail.com'
+
+    };
   }
 
 }

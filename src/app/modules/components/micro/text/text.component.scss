@@ -1,17 +1,49 @@
 @import '../../../../../styles/abstracts/variables';
 
 :host {
-
-  &.transform-uppercase {
-    text-transform: uppercase;
-  }
-  &.color-light {
-    color: $white;
-  }
-  &.color-cerulean {
-    color: #2A6BBE;
-  }
-  &.color-gray {
-    color: $gray;
-  }
+    &.transform-uppercase {
+        text-transform: uppercase;
+    }
+    &.color-light {
+        color: $white;
+    }
+    &.color-cerulean {
+        color: #2A6BBE;
+    }
+    &.color-gray {
+        color: $gray;
+    }
+    &.size-xs {
+        font-size: $xs-fs;
+    }
+    &.size-sm {
+        font-size: $sm-fs;
+    }
+    &.size-reg {
+        font-size: $nomal-fs;
+    }
+    &.size-mid {
+        font-size: $mid-fs;
+    }
+    &.size-lg {
+        font-size: $lg-fs;
+    }
+    &.size-xl {
+        font-size: $xl-fs;
+    }
+    &.weight-light {
+        font-weight: $light-font-weight;
+    }
+    &.weight-book {
+        font-weight: $book-font-weight;
+    }
+    &.weight-normal {
+        font-weight: $default-font-weight;
+    }
+    &.weight-heavy {
+        font-weight: $emphatic-font-weight;
+    }
+    &.weight-strong {
+        font-weight: $strong-font-weight;
+    }
 }

@@ -1,42 +1,12 @@
 <div class="experience-container">
-    <div class="company">
+    <div class="company" *ngFor="let experience of experiences">
         <div class="image-container">
-            <img src="../../../../../assets/images/kf.jpeg" alt="">
+            <a href="">
+                <img [src]=experience.imageURL alt="">
+            </a>
         </div>
         <div>
-            <h4 app-text color="light">(May 2018 - Present)</h4>
-        </div>
-    </div>
-    <div class="company">
-        <div class="image-container">
-            <img src="../../../../../assets/images/vm_logo.png" alt="">
-        </div>
-        <div>
-            <h4 app-text color="light">(April 2017-April 2018)</h4>
-        </div>
-    </div>
-    <div class="company">
-        <div class="image-container">
-            <img src="../../../../../assets/images/vanguard.png" alt="">
-        </div>
-        <div>
-            <h4 app-text color="light">(March 2016 - March 2017)</h4>
-        </div>
-    </div>
-    <div class="company">
-        <div class="image-container">
-            <img src="../../../../../assets/images/jpmc.png" alt="">
-        </div>
-        <div>
-            <h4 app-text color="light">(April 2014 - Dec 2015)</h4>
-        </div>
-    </div>
-    <div class="company">
-        <div class="image-container">
-            <img src="../../../../../assets/images/ts.png" alt="">
-        </div>
-        <div>
-            <h4 app-text color="light">(Jan 2012 - March 2013)</h4>
+            <h4 app-text color="light">{{ experience.year }}</h4>
         </div>
     </div>
 </div>
