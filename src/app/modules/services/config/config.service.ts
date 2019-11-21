@@ -23,8 +23,8 @@ export class ConfigService {
   public getAboutMeInfo(): Observable<IAboutMe> {
     return this.httpClient.get<IAboutMe>(this.aboutMeApiUrl);
   }
-  public getExperienceDetails(): Observable<IExp> {
-    return this.httpClient.get<IExp>(this.experiencesApiUrl);
+  public getExperienceDetails(): Observable<IExp[]> {
+    return this.httpClient.get<IExp[]>(this.experiencesApiUrl);
   }
   public getSkillsSet(): Observable<ISkills> {
     return this.httpClient.get<ISkills>(this.skillsSetApiUrl);

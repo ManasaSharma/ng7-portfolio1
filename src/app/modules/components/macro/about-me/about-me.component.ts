@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../../../services/config/config.service';
 
 @Component({
     selector: 'app-about-me',
@@ -9,11 +10,17 @@ export class AboutMeComponent implements OnInit {
     public aboutMedetails: any;
     public errorMessage: string
     
-    constructor( ) {  
+    constructor( private configService: ConfigService) {  
     }
     
     ngOnInit() {
-        
+        this.configService.getAboutMeInfo().subscribe({
+            next:data => {
+                console.log(data);
+                this.aboutMedetails = data;
+            },
+            error:err => this.errorMessage = err
+        });
     }
 
 }
