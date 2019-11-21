@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../../../services/modal.service';
+import { ConfigService } from '../../../services/config/config.service';
 
 @Component({
   selector: 'app-multi-cards',
@@ -8,17 +9,23 @@ import { ModalService } from '../../../services/modal.service';
 })
 export class MultiCardsComponent implements OnInit {
 
-  public cards = [];
+  cardsNames = [];
   public displayCardsStack = false;
   modalCloseResult: string;
   title = 'modal-demo';
+
   constructor(
-    public modalService: ModalService
+    public modalService: ModalService,
+    private configService : ConfigService
   ) {
-    this.cards = this.getCards();
+    //this.cards = this.getCards();
   }
 
   ngOnInit() {
+    this.configService.getCompleteApiUrl().subscribe((data) => {
+      this.cardsNames = Object.keys(data);
+      console.log('Hi I am in multi cards' , this.cardsNames)
+  });
   }
   getCards() {
     return [

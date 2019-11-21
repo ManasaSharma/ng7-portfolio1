@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css?family=Amarante&display=swap');
 
 :host {
-    // font-family: 'Amarante', cursive ;
+    
     &.transform-uppercase {
         text-transform: uppercase;
     }
@@ -16,22 +16,25 @@
         color: $gray;
     }
     &.size-xs {
-        font-size: $xs-fs;
+        font-size: $xs-fs;//10px
     }
     &.size-sm {
-        font-size: $sm-fs;
+        font-size: $sm-fs; //12px
     }
     &.size-reg {
-        font-size: $nomal-fs;
+        font-size: $nomal-fs;//14px
     }
     &.size-mid {
-        font-size: $mid-fs;
+        font-size: $mid-fs;//20px
     }
     &.size-lg {
-        font-size: $lg-fs;
+        font-size: $lg-fs;//24px
     }
     &.size-xl {
-        font-size: $xl-fs;
+        font-size: $xl-fs;//30px
+    }
+    &.size-xxl {
+        font-size: $xxl-fs;//40px
     }
     &.weight-light {
         font-weight: $light-font-weight;

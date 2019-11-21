@@ -16,7 +16,6 @@ export class ModalComponent implements OnInit {
 
     open(title) {
         this.ModalTitle = title;
-        console.log(title);
         this.modalService.open(this.content, { ariaLabelledBy: 'modal-simple-title' })
             .result.then((result) => { console.log(this.content); console.log(result as string); this.result.emit(result) },
                 (reason) => { console.log(reason as string); this.result.emit(reason) })
