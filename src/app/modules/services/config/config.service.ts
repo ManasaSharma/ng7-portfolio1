@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { IAboutMe } from '../../models/aboutMe';
 import { IExp } from '../../models/exp';
 import { ISkills } from '../../models/skills';
-import { IConfig } from '../../models/config';
+import { ICards } from '../../models/cards';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,7 @@ export class ConfigService {
   private aboutMeApiUrl = "https://my-portfolio-cf913.firebaseio.com/aboutMe/.json";
   private experiencesApiUrl = "https://my-portfolio-cf913.firebaseio.com/experience/.json";
   private skillsSetApiUrl = "https://my-portfolio-cf913.firebaseio.com/skills/.json";
+  private cardsSetApiUrl = "https://my-portfolio-cf913.firebaseio.com/cards/.json";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -28,7 +29,10 @@ export class ConfigService {
   public getSkillsSet(): Observable<ISkills> {
     return this.httpClient.get<ISkills>(this.skillsSetApiUrl);
   }
-  public getCompleteApiUrl(): Observable<IConfig[]> {
-    return this.httpClient.get<IConfig[]>(this.skillsSetApiUrl);
+  public getCompleteDatal(): Observable<object> {
+    return this.httpClient.get<object>(this.completeApiUrl);
+  }
+  public getCardsSetData(): Observable<ICards[]> {
+    return this.httpClient.get<ICards[]>(this.cardsSetApiUrl);
   }
 }

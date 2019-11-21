@@ -9,32 +9,27 @@ import { ConfigService } from '../../../services/config/config.service';
 })
 export class MultiCardsComponent implements OnInit {
 
-  cardsNames = [];
+  public cards = [];
   public displayCardsStack = false;
   modalCloseResult: string;
   title = 'modal-demo';
-
   constructor(
     public modalService: ModalService,
-    private configService : ConfigService
-  ) {
-    //this.cards = this.getCards();
-  }
+    private configService: ConfigService
+  ) {}
 
   ngOnInit() {
-    this.configService.getCompleteApiUrl().subscribe((data) => {
-      this.cardsNames = Object.keys(data);
-      console.log('Hi I am in multi cards' , this.cardsNames)
-  });
+    this.configService.getCardsSetData().subscribe(
+      (data: any) => this.cards = data)
   }
-  getCards() {
-    return [
-      { cardName: 'Skills'},
-      { cardName: 'Companies' },
-      { cardName: 'About Me' },
-      { cardName: 'Contact Me' }
-    ];
-  }
+  // getCards() {
+  //   return [
+  //     { cardName: 'Skills'},
+  //     { cardName: 'Companies' },
+  //     { cardName: 'About Me' },
+  //     { cardName: 'Contact Me' }
+  //   ];
+  // }
   onModalClose(reason: string) {
     this.modalCloseResult = reason;
   }
