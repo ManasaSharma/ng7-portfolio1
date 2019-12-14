@@ -6,7 +6,7 @@
   <ng-container *ngIf="displayCardsStack">
     <div class="cards-stack-container">
       <div class="each-card" *ngFor="let card of cards">
-        <app-card [style.backgoundImage]="card.image" (click)="mymodal.open(card.cardName)" [title]="card.cardName"></app-card>
+        <app-card [style.backgoundImage]="card.image" (click)="mymodal.open(card?.cardName)" [title]="card?.cardName"></app-card>
       </div>
 
     </div>

@@ -20,6 +20,7 @@ export class TextComponent implements OnInit, OnChanges, OnDestroy {
     @HostBinding('class.size-mid') public ismd = false;
     @HostBinding('class.size-lg') public islg = false;
     @HostBinding('class.size-xl') public isxl = false;
+    @HostBinding('class.size-xxl') public isxxl = false;
     @HostBinding('class.weight-light')  public islightweight   = false;
     @HostBinding('class.weight-book')  public isbook   = false;
     @HostBinding('class.weight-normal')  public isnormal   = false;
@@ -44,6 +45,7 @@ export class TextComponent implements OnInit, OnChanges, OnDestroy {
         this.evaluateIfLightColor();
         this.evaluateIfGrayColor();
         this.evaluateIfLg();
+        this.evaluateIfXXl();
         this.evaluateIfXl();
         this.evaluateIfMd();
         this.evaluateIfSm();
@@ -62,6 +64,9 @@ export class TextComponent implements OnInit, OnChanges, OnDestroy {
     }
     evaluateIfGrayColor() {
         this.isgray = this.color === 'gray';
+    }
+    evaluateIfXXl() {
+        this.isxxl = this.size === 'xxl';
     }
     evaluateIfXl() {
         this.isxl = this.size === 'xl';

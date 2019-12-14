@@ -1,8 +1,15 @@
 <div class="detail-container">
   <div class="content">
-      <h1>
-          <span app-text color="light">{{ info.name }}</span><br>
-          <span app-text color="light">{{ info.role }}</span>
-      </h1>
+    <h1 app-text color="light" size="xxl">
+        <span app-text color="light" weight="light">Hi! I'm </span>{{ aboutMedetails?.firstName }}
+    </h1>
+    <h2 app-text color="light"> {{ aboutMedetails?.role }}</h2>  
+    <hr/>
+    <h1 app-text color="light">{{ aboutMedetails?.note }}</h1>
+    <h3 class="download-file">
+        <a href="../../../../../manasa-resume-2019.docx"  download="manasaB_2019.docx" app-text color="light" weight="heavy"
+            size="mid">Download My Resume Here
+        </a>
+      </h3>
   </div>
 </div>

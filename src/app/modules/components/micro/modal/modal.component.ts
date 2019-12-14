@@ -14,11 +14,13 @@ export class ModalComponent implements OnInit {
 
     constructor(private modalService: NgbModal) { }
 
-    open(title) {
+    open(title: string) {
         this.ModalTitle = title;
-        console.log(title);
         this.modalService.open(this.content, { ariaLabelledBy: 'modal-simple-title' })
-            .result.then((result) => { console.log(this.content); console.log(result as string); this.result.emit(result) },
+            .result.then(
+                (result) => { console.log(this.content); console.log(result as string); 
+                                this.result.emit(result) 
+                            },
                 (reason) => { console.log(reason as string); this.result.emit(reason) })
     }
 

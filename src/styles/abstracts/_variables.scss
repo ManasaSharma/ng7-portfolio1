@@ -20,12 +20,12 @@ $large: $mid + $mid; //40px;
 
 //defined variabbles for font-sizes
 $xs-fs: 10px; //xs
-$sm-fs: $xs-fs + 2px; //12px; sm
+$sm-fs: $xs-fs + 2px;   //12px; sm
 $nomal-fs: $sm-fs + 4px; //14px; reg
 $mid-fs: $xs-fs + $xs-fs; //20px; mid
 $lg-fs: $mid-fs + 4px; //24px; lg
 $xl-fs: $mid-fs + $xs-fs; //30px; xl
-
+$xxl-fs: $xl-fs + $xs-fs;//40px: xxl
 //typography
 $light-font-weight: 200; //light
 $book-font-weight: 300; //book

@@ -1,23 +1,29 @@
 <div class="aboutMe-container">
     <div class="desc" app-text color="light" weight="normal" size=""> 
-        <h3 app-text color="light" weight="normal">{{ myDetails.desc }}</h3>
+        <h1 app-text color="light" weight="normal" size="xl">{{ aboutMedetails?.bio }}</h1>
     </div>
     <div class="qualification">
         <div class="qualification-details">
-            <h4 app-text color="light" weight="strong" > Educational Detials: </h4>
-            <h3  app-text color="light" weight="strong">--- {{myDetails.MsDetails}} </h3>
-            <h3 app-text color="light" weight="strong">--- {{myDetails.MCADetails}} </h3>
+            <h3 class="edu-details" app-text color="light" weight="strong" > Educational Detials: </h3>
+            <h2  app-text color="light" weight="strong">{{aboutMedetails?.universityName}} </h2>
+            <h2 app-text color="light" weight="strong">--- {{aboutMedetails?.degree}} </h2>
+           
             <div class="title-text">
-                <!-- <a href="../../../../../manasa-resume-2019.docx" download="manasa-resume-2019.docx" app-text color="light" weight="heavy"
-                    size="mid">Resume
-                </a> -->
-                <a target="_blank" href="https://www.linkedin.com/in/manasa-b-0b8a8b106">
+               
+                <h2 class="follow-me" app-text color="light" weight="strong" size="mid">Follow me on:</h2>
+                
+                <a target="_blank" href="{{ aboutMedetails?.linkedin }}">
                     <i app-text color="light" size="lg" class="fab fa-linkedin-in"></i>
                 </a>
-                <a target="_blank" href="https://github.com/ManasaSharma/ng7-portfolio1">
+                <a target="_blank" href="{{ aboutMedetails?.github }}">
                     <i app-text color="light" size="lg" class="fab fa-github"></i>
                 </a>
 
+            </div>
+            <div class="download-file">
+                <a href="../../../../../manasa-resume-2019.docx"  download="manasaB_2019.docx" app-text color="light" weight="heavy"
+                    size="mid">Download My Resume Here
+                </a>
             </div>
         </div>
     </div>
