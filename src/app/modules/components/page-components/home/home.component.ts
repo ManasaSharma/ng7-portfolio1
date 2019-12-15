@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-import { ConfigService } from '../../../models/config/config.service';
-=======
 import { ConfigService } from '../../../services/config/config.service';
 
->>>>>>> 7fafa73f62381dbcb416322b6e1a8683e1742473
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,7 +12,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.apiConfigService.getAboutMeInfo().subscribe((res) => {
+      console.log('hello')
+      console.log(res);
       return this.welcomeDetails = res;
     });
+    // this.apiConfigService.getLocalApiData().subscribe((res) => {
+    //   console.log('hello')
+    //   console.log(res);
+    //   return res;
+    // });
   }
 }
